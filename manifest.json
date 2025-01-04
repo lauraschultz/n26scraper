@@ -1,0 +1,16 @@
+{
+	"name": "N26 exporter",
+	"description": "N26 -> csv format",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "index.html"
+	},
+	"permissions": ["activeTab"],
+	"content_scripts": [
+		{
+			"js": ["content-script.js"],
+			"matches": ["https://app.n26.com/*"]
+		}
+	]
+}
